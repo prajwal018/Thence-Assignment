@@ -1,15 +1,21 @@
 import Accordion from "./UI/Accordion";
+import Unionsvg from "../assets/svgs/union.svg";
 
 export default function FAQs() {
   return (
-    <div className="bg-[#E8EEE7] p-10 rounded-3xl mt-20 flex">
-      <div className="w-1/2">
-        <h2 className="font-coveredByYourGrace font-medium text-2xl text-[#9E9D9D]">
+    <div className="bg-[#E8EEE7] px-10 rounded-3xl mt-20 flex">
+      <div className="w-1/2 p-10">
+        <h2 className="font-coveredByYourGrace font-medium text-3xl text-[#9E9D9D]">
           What's on your mind
         </h2>
-        <h2 className="font-bold text-4xl">Ask Questions</h2>
+        <h2 className="font-bold text-5xl">Ask Questions</h2>
+        <img
+          src={Unionsvg}
+          alt="stars"
+          className="relative -bottom-10 -left-20 p-0 pt-10 max-w-[450px]"
+        />
       </div>
-      <div className="w-1/2 space-y-4">
+      <div className="w-1/2 space-y-4 pt-20">
         <Accordion
           question="Do you offer freelancers?"
           answer="Yes, our company offers freelance opportunities for individuals looking to work independently on various projects and assignments."

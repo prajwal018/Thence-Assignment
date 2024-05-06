@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="rounded-full p-5 border border-gray-300 flex justify-between items-center">
+    <nav className="rounded-full p-5 border border-[#EAEAEA] flex justify-between items-center">
       <div>
         <img src={BrandSvg} alt="brand" className="h-10" />
       </div>

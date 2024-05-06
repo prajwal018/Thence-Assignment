@@ -20,7 +20,9 @@ export default function Carousel({ data }: CarouselProps) {
         >
           {data.map((item, index) => (
             <li key={index} className="flex-shrink-0 w-full">
-              <p className="max-w-[340px] text-3xl text-start">{item}</p>
+              <p className="max-w-[360px] text-4xl font-bold text-start">
+                {item}
+              </p>
             </li>
           ))}
         </ul>
@@ -32,8 +34,8 @@ export default function Carousel({ data }: CarouselProps) {
             onClick={() => handleDotClick(index)}
             className={`w-3 h-3 rounded-full mx-1 ${
               index === activeIndex
-                ? "bg-green-500"
-                : "bg-gray-300 hover:bg-gray-400"
+                ? "bg-[#2DA950]"
+                : "bg-[#E4E3E3] hover:bg-[#CAD0CB]"
             }`}
           />
         ))}

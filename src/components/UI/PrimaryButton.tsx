@@ -14,8 +14,8 @@ export default function Button({
 }: ButtonProps) {
   const styles =
     styleName === "primary"
-      ? "bg-[#1C1C1C] hover:bg-[#4E4E4E] text-white"
-      : "bg-[#F1F1F1] hover:bg-[#EAEAEA] text-black";
+      ? "bg-[#1C1C1C] hover:bg-[#4E4E4E] text-[#FFFFFF]"
+      : "border border-[#EAEAEA] hover:bg-[#F1F1F1] text-[#1C1C1C]";
   return (
     <button
       className={`${styles} px-6 py-3 rounded-full ${
