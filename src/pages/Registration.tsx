@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import BrandSvg from "../assets/svgs/brand.svg";
+import CloseSvg from "../assets/svgs/close.svg";
 import RegistrationForm from "../components/Registration/RegistrationForm";
 import RegistrationSuccess from "../components/Registration/RegistrationSuccess";
 
@@ -14,9 +15,9 @@ export default function Registration() {
         {!registrationSuccess && (
           <Link
             to="/"
-            className="border border-gray-300 rounded-full py-3 px-5 font-bold"
+            className="border border-gray-300 rounded-full py-2 px-2 font-bold"
           >
-            X
+            <img src={CloseSvg} alt="brand" className="" />
           </Link>
         )}
       </header>
