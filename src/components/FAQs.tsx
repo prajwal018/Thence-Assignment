@@ -3,7 +3,7 @@ import Unionsvg from "../assets/svgs/union.svg";
 
 export default function FAQs() {
   return (
-    <div className="bg-[#E8EEE7] px-10 rounded-3xl mt-20 flex">
+    <div className="bg-[#E8EEE7] px-10 rounded-3xl mt-24 flex">
       <div className="w-1/2 p-10">
         <h2 className="font-coveredByYourGrace font-medium text-3xl text-[#9E9D9D]">
           What's on your mind

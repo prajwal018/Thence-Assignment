@@ -20,7 +20,7 @@ const DUMMY_CAROUSEL_DATA = [
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center gap-2 mt-10">
+    <div className="flex flex-col items-center gap-2 mt-20 mb-28">
       <h2 className="font-coveredByYourGrace text-[#2DA950] text-4xl">
         Success Stories
       </h2>
@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="mt-20 flex">
         <div className="w-1/2">
           <div className="relative w-[80%] mx-40">
-            <img src={HeroSvg} alt="hero" className="" />
+            <img src={HeroSvg} alt="hero" className="m-auto" />
             <div className="absolute top-20 -left-28 bg-white rounded-3xl pb-5 pt-8 px-5 max-w-[250px] shadow-sm shadow-black/20">
               <div className="relative pb-4">
                 <img
@@ -45,14 +45,7 @@ export default function Hero() {
                 availability
               </p>
             </div>
-            <div className="absolute bottom-10 -left-16 flex gap-2 bg-white rounded-full py-2 px-5 max-w-[250px] shadow-sm shadow-black/20">
-              <img src={RocketSvg} alt="rocket" />
-              <div>
-                <span className="font-semibold text-xl">10 DAYS</span>
-                <p className="text-[#828282]">Staff Deployment</p>
-              </div>
-            </div>
-            <div className="bg-[#002E18] absolute -bottom-10 -right-10 rounded-3xl pb-5 pt-8 px-5 max-w-[250px] shadow-sm shadow-black/20">
+            <div className="absolute -right-10 -bottom-10 bg-[#002E18] rounded-3xl pb-5 pt-8 px-5 max-w-[250px] shadow-sm shadow-black/20">
               <div className="space-x-2 pb-4">
                 <span className="text-white font-bold text-5xl">$0.5</span>
                 <span className="text-[#CCCCCC]">MILLION</span>
@@ -60,6 +53,13 @@ export default function Hero() {
               <p className="text-[#CCCCCC] text-m">
                 Reduced client expenses by saving on hiring and employee costs.
               </p>
+            </div>
+            <div className="absolute bottom-10 -left-16 flex gap-2 bg-white rounded-full py-2 px-5 max-w-[250px] shadow-sm shadow-black/20">
+              <img src={RocketSvg} alt="rocket" />
+              <div>
+                <span className="font-semibold text-xl">10 DAYS</span>
+                <p className="text-[#828282]">Staff Deployment</p>
+              </div>
             </div>
           </div>
         </div>
